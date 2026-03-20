@@ -5,11 +5,12 @@ import { ThemeProvider as MuiThemeProvider, createTheme } from '@mui/material/st
 import { lightTheme, darkTheme } from './theme'
 import { useEffect, useState } from 'react'
 function MuiProvider({ children }: { children: React.ReactNode }) {
-    const { theme } = useTheme()
+    const { theme, setTheme } = useTheme()
     const [mounted, setMounted] = useState(false)
 
     useEffect(() => {
         setMounted(true)
+        setTheme('dark')
     }, [])
 
     if (!mounted) return null

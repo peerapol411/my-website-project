@@ -9,7 +9,6 @@ import { useState } from "react";
 
 const navItems = [
     { label: 'Welcome', path: '/welcome' },
-    { label: 'Home', path: '/home' },
     { label: 'Profile', path: '/profile' },
     { label: 'Projects', path: '/projects' },
 ]
@@ -80,7 +79,7 @@ export default function TopNavbar() {
                         letterSpacing: 0.5,
                     }}
                 >
-                    My Profile
+                    Peerapol.onm
                 </Typography>
 
                 {!isMobile && <Stack
