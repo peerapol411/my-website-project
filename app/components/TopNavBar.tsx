@@ -9,7 +9,7 @@ import { useState } from "react";
 
 const navItems = [
     { label: 'Welcome', path: '/welcome' },
-    { label: 'Profile', path: '/profile' },
+    { label: 'About Me', path: '/about-me' },
     { label: 'Projects', path: '/projects' },
 ]
 
@@ -64,8 +64,8 @@ export default function TopNavbar() {
     )
 
     return (
-        <AppBar position="static" sx={{
-            backgroundColor: theme === "light" ? '#3467bf' : 'dark',
+        <AppBar position="fixed" sx={{
+            backgroundColor: theme === "light" ? '#3467bf' : 'dark'
         }}>
             <Toolbar sx={{ position: 'relative' }}>
                 {isMobile && <IconButton edge="start" color="inherit" onClick={() => setOpen(true)}>
@@ -77,7 +77,9 @@ export default function TopNavbar() {
                     sx={{
                         fontWeight: 600,
                         letterSpacing: 0.5,
+                        cursor: 'pointer'
                     }}
+                    onClick={() => router.push('/welcome')}
                 >
                     Peerapol.onm
                 </Typography>

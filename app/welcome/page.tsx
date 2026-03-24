@@ -47,7 +47,7 @@ const Welcome = () => {
                     Peerapol Onmanee (Best)
                 </Typography>
                 <Typography variant="h6" mt={2}>
-                    Full Stack Developer
+                    Full Stack Developer (Mobile & Web Apps)
                 </Typography>
                 <Typography variant="h6">
                     I'm currently working for AXONS (CPF IT CENTER) Since 2022.
