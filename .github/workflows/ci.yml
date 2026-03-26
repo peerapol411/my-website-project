@@ -6,7 +6,8 @@ on:
       - main  # แก้ไขตรงนี้: ต้องมีช่องว่างหลังขีดกลางด้วยนะครับ
 
 jobs:
-  test:
+  ci:
+    name: Continuous Integration
     runs-on: ubuntu-latest
 
     steps:
