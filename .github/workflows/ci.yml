@@ -1,9 +1,10 @@
 name: CI My Profile Project
 
 on:
+  push:
+    branches: [ main ]
   pull_request:
-    branches: 
-      - main  # แก้ไขตรงนี้: ต้องมีช่องว่างหลังขีดกลางด้วยนะครับ
+    branches: [ main ]
 
 jobs:
   ci:
