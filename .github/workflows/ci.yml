@@ -12,22 +12,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. ดึง Code มาจาก Repository
+      # 1. pull code from repository
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. ติดตั้ง Node.js (แนะนำวิธีนี้แทนการใช้ container image)
+      # 2. Setup Node.js Environment
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'npm' # ช่วยให้การรันครั้งต่อไปเร็วขึ้นมาก
+          cache: 'npm' # Keep npm cache to speed up subsequent runs
 
-      # 3. ติดตั้ง Dependencies
+      # 3. Install Dependencies
       - name: Install dependencies
         run: npm install
 
-      # 4. รันคำสั่ง Test หรือ Build
+      # 4. Run tests and build
       - name: Run tests
         run: npm test
 
