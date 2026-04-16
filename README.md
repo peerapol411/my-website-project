@@ -12,7 +12,7 @@ The goal of this project was to move beyond a static profile and build a modern,
 - **Styling:** Material UI (MUI)
 - **CI/CD:** GitHub Actions
 - **Testing:** Jest
-- **Deployment:** Vercel / GitHub Pages
+- **Deployment:** Vercel
 
 ## ⚙️ CI/CD Pipeline Features
 
